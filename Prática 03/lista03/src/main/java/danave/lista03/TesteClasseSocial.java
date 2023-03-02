@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class TesteClasseSocial {
     public static void main(String[] args) {
         
+        // Instância = criação de objeto
         ClasseSocial classe = new ClasseSocial();
         
         Scanner leitor = new Scanner(System.in);
@@ -20,8 +21,8 @@ public class TesteClasseSocial {
         System.out.println("Insira a sua renda:");
         Double rendaInserida = leitor.nextDouble();
         
-        Double resultadoSalarioMinimo = classe.calcularSalarioMinimo(rendaInserida);
-        String resultadoClasseSocial = classe.calcularClasseSocial(rendaInserida);
+        Double resultadoSalarioMinimo = classe.calcularQtdSalario(rendaInserida);
+        String resultadoClasseSocial = classe.definirClasseSocial(rendaInserida);
         
         System.out.println(String.format("Você recebe aproximadamente %.2f"
                 + " salários mínimos.\n"

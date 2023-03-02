@@ -9,11 +9,12 @@ package danave.lista03;
  * @author Leonardo
  */
 public class ClasseSocial {
-    Double calcularSalarioMinimo(Double renda){
+    // Assinatura do método (retorno/nome/argumento)
+    Double calcularQtdSalario(Double renda){
         return renda / 1045.0;
     }
     
-    String calcularClasseSocial(Double renda){
+    String definirClasseSocial(Double renda){
         
         if (renda > 0 && renda <= 2090.00){
             return "E";
